@@ -1,0 +1,156 @@
+@media (min-width:550px) and (max-width:799px) {
+
+    /* ===================header-layout=================== */
+
+    header {
+        padding: 3rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1.2em;
+    }
+
+    nav li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        color: var(--color1);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav a:hover {
+        color: var(--color2);
+        background-color: transparent;
+    }
+
+    /* ===================collection & popularprint-layout=================== */
+
+    section li {
+        flex-basis: 49.5%;
+    }
+
+    /* ===================collection & popularprint-layout=================== */
+
+    section li.tablet-card-3 {
+        flex-basis: 100%;
+    }
+
+    section li.tablet-card-3 img {
+        object-position: 0 -350px;
+    }
+
+    /* ============================footer-layout============================== */
+
+    .social,
+    address {
+        flex-basis: 49.5%;
+    }
+
+    footer address {
+        margin-top: 0;
+    }
+}
+
+
+/* ==========================================for tablet===================================== */
+
+
+@media (min-width:550px) {
+
+
+    /* ============================mission-layout============================== */
+
+    .mission-para{
+        display: flow-root;
+        max-width: 900px;
+    }
+    .mission-img {
+        float: left;
+        shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+        max-height: 200px;
+    }
+
+    /* ============================collection and popular-layout============================== */
+
+    section ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    section li {
+        flex-basis: 49.5%;
+    }
+
+    figure img {
+        object-position: 0;
+    }
+
+    /* ============================footer-layout============================== */
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+}
+
+
+/* ==========================================for desktop===================================== */
+
+
+@media (min-width: 800px) {
+
+    /* ============================collection and popular-layout============================== */
+
+    section h2 {
+        margin-left: 100px;
+    }
+
+    section li {
+        flex-basis: 32.5%;
+    }
+
+    /* ============================header-layout============================== */
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    nav li:first-child {
+        flex-basis: 60%;
+        order: 2;
+    }
+
+    nav li {
+        flex-basis: auto;
+
+    }
+
+    nav li a {
+        background-color: transparent;
+        color: black;
+    }
+
+    nav li:nth-child(2),
+    nav li:nth-child(3) {
+        order: 1;
+    }
+
+    nav li:nth-child(4),
+    nav li:nth-child(5) {
+        order: 3;
+    }
+
+    /* ============================footer-layout============================== */
+
+    footer address {
+        flex-basis: 65.5%;
+        margin-top: 0px;
+    }
+}
